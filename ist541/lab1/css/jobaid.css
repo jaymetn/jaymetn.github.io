@@ -2,15 +2,16 @@
 /* All comments go between the front slash and asterisk symbols */
 
 body {
-	background-color:#d4a373;   /* background color */
-	color: #444;          /* text color for the entire page */
+	background-color:#eaf4f4;   /* background color */
+	color: #01161e;          /* text color for the entire page */
 	font-size: 17px;
-	font-family: Tahoma, Verdana, sans-serif;
+	font-family: Helvetica, Verdana, sans-serif;
 }
 
 h1, h2 { 
 	text-align:center;     /* centers h1 and h2 content */
-	color:#faedcd;
+	color:#4a5759;
+	font-weight: bold;
 }
 
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
@@ -21,17 +22,21 @@ h1, h2 {
 
 /* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
 .stepTitle{
-	padding:15px;
+	color: #192a51;
+	padding:10px;
 	text-align:left;
 	font-size:18px;
-	background-color:#ccd5ae;
+	background-color:#a4c3b2;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
  }
 
 .stepContent{ 
-	background-color: #e9edc9;
-	padding:7px;
+	background-color: #cce3de;
+	color: #22223b;
+	padding:10px;
 	display: flex;
 	justify-content: center;
 	border-bottom-left-radius: 10px;
@@ -51,9 +56,18 @@ h1, h2 {
 
 img {
 	border-radius: 30px;
-	border: 5px solid #d4a373;
-	
+	border: 2px solid #4a5759;
+	box-shadow: 5px 5px 5px gray;
 }
-
+.warning {
+	background-color: #F6AEB0;
+	padding:10px;
+	border-radius:20px;
+}
+.material-icons {
+	color: red;
+	font-size:2em;
+	float: left;
+}
 
 
