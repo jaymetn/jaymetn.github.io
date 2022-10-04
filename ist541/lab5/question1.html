@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 5</title>
+<link href="css/tofu.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<h1>Jayme Nakamura</h1>
+	<h2>Lab 5: JavaScript and jQuery</h2>
+	
+	<div class="topnav"> 
+	  <a href="question1.html">Question 1</a> 
+	  <a href="question2.html">Question 2</a> 
+	</div>
+	
+	<div>
+  <h1>What is the English translation for tofu?</h1>
+  <h3 id="hint"><em>Hint:</em> Hover over the image below to find out!</h3>
+  <img onmouseenter="showAnswer()" id="mapo_tofu"  src="img/mapo_tofu.jpg" alt="Chinese Mapo Tofu"  /> 
+  <img onmouseleave="hideAnswer()" id="tofu" src="img/tofu_pic.jpg" alt="Japanese Cold Tofu"/>
+  <div id="answer"></div>
+	</div>
+  <!-- This is a placeholder to display here the answer--> 
+	
+	
+</div>
+<!-- closing  “wrapper” -->
+
+	
+	
+<script>
+ function showAnswer() {
+	   $("#mapo_tofu").hide();
+	   $("#tofu").show();
+	   $("#answer").html("<h2>Bean Curd!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#mapo_tofu").show();
+	   $("#tofu").hide();
+	   $("#answer").html("");  
+	}
+</script>
+	
+</body>
+</html>

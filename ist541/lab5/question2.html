@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 5</title>
+<link href="css/tofu.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+	
+<div id="wrapper">
+	<h1>Jayme Nakamura</h1>
+	<h2>Lab 5: JavaScript and jQuery</h2>
+	<div class="topnav"> 
+	  <a href="question1.html">Question 1</a> 
+	  <a href="question2.html">Question 2</a> 
+	</div>
+	
+  <h1>Where is the birthplace of tofu?</h1>
+	<br>
+	<img src="img/fried_tofu.jpg" alt="Fried Tofu">
+	
+  <p><h3>Click on one of the following choices</h3></p>
+	
+  <h2 onclick="wrongAnswer1()" class="choices"> Japan </h2>
+  <h2 onclick="rightAnswer()" class="choices"> China </h2>
+  <h2 onclick="wrongAnswer2()" class="choices"> Korea </h2>
+  <h2 onclick="wrongAnswer4()" class="choices"> Vietnam </h2>
+  <h2 onclick="wrongAnswer3()" class="choices"> USA </h2>
+	
+  <div id="feedback"></div>
+  <img id="china" src="img/chinamap_unsplash.jpg" /> 
+</div>
+
+	
+ <script>
+   function rightAnswer(){
+      $("#feedback").html("<h2 style='color:green'> Correct! Tofu originated in China during the Han Dynasty.</h2>");
+      $("#china").show();
+      }
+   function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> Although not the first country, tofu was introduced to Japan during the Nara period. </h2>");
+      $("#china").hide();
+   	  }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Korea is not the birthplace of tofu, but many popular dishes incorporate it as the main ingredient. </h2>");
+      $("#china").hide();
+   	  }
+   function wrongAnswer3(){
+	   $("#feedback").html("<h2 style='color:red'> Benjamin Franklin was the first American to mention tofu in 1770. He referred to it as cheese from China.</h2>");
+	   }
+	function wrongAnswer4(){
+		$("#feedback").html("<h2 style='color:red'> While it was not the first country, tofu was said to arrive in Vietnam in the 10th and 11th centuries.</h2>");
+	}
+ </script>
+	
+</body>
+</html>
