@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 6</title>
+<link href="css/hotspot.css" rel="stylesheet" type="text/css">
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+<script src="js/hotspot.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <h2>What is the country with the largest population?</h2>
+  <h3> Click on it! </h3>
+	
+	    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel"> 
+           Feedback
+        </h4>
+      </div>
+      <div class="modal-body">
+
+  <div id="feedback"></div>
+	      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	
+  <img src="img/world_map.png" alt="World Map" width="650" height="420" usemap="#Map"/>
+  <map name="Map">
+    <area id="China" shape="poly" coords="514,108,519,85,536,98,575,108,599,92,595,77,632,93,625,109,608,116,625,142,615,162,618,158,609,163,587,168,577,170,550,146,533,149,519,139,516,129,499,116" href="#" alt="China" title="China">
+    <area id="USA" shape="poly" coords="16,134,7,114,24,87,59,87,92,86,120,96,118,109,132,99,151,93,140,107,123,125,110,138,104,155,98,143,79,144,65,147,61,156,45,143" href="#" alt="United States of America" title="USA">
+    <area id="India" shape="poly" coords="502,130,506,140,500,151,496,154,495,163,504,171,509,186,517,204,520,211,527,198,526,184,538,180,542,168,544,156,523,151" href="#" alt="India" title="India">
+  </map>
+<br />
+  <br />
+  <div style="font-size:10px">Image Courtesy of the University of Texas Libraries, The University of Texas at Austin.</div>
+  <br />
+</div>
+<!--closing wrapper-->
+
+</body>
+</html>

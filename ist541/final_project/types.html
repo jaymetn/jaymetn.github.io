@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project: Tofu 101</title>
+<link href="css/tofu.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<a name="top"></a>
+
+<div id="header">
+  <h1>Tofu 101</h1>
+	<img id="header_logo" src="img/tofulogo.png" alt="Tofu Image">
+</div>
+<br>	
+<div class="topnav"> 
+	<a class="active" href="index.html">Home</a> 
+	<a href="history.html">History</a> 
+	<a href="types.html">Types of Tofu</a>
+	<a href="misosoup.html">Tofu Miso Soup</a> 
+	<a href="tofudishes.html">Dishes Around the World</a> 
+	<a href="resources.html">Resources</a> 
+</div> <!-- End of navigation menu -->
+	
+	<div id="wrapper">
+	<br>
+		
+		<div class="welcomeContent">
+			<div class="tofuContent">
+				<h2>Silken Tofu</h2>
+				<p>This type of tofu has the highest water content. It falls apart easily and has a texture similar to burrata.</p>
+				<em>Hover over the image to view a popular way to use silken tofu!</em>
+			</div>
+			<div class="welcomeImage">
+				<img onmouseenter="showAnswer1()" id="silken_tofu" src="img/silken_tofu.jpeg" alt="Silken Tofu"  /> 
+				<img onmouseleave="hideAnswer1()" id="tofu_pudding" src="img/tofu_pudding.jpeg" alt="Tofu Pudding"  /> 
+				<div id="answer1"></div>
+			</div>	
+		</div> <!-- End of first tofu type -->
+		<br>
+		<hr>
+		
+		<div class="welcomeContent">
+			<div class="tofuContent">
+				<h2>Soft Tofu</h2>
+				<p>This type is primarily used in Asian dishes. Soft tofu easily soaks up high levels of flavor and is often used in soups and stews.</p>
+				<em>Hover over the image to view a popular way to use soft tofu!</em>
+			</div>
+			<div class="welcomeImage">
+				  <img onmouseenter="showAnswer2()" id="soft_tofu" src="img/soft_tofu.jpeg" alt="Soft Tofu"  /> 
+				<img onmouseleave="hideAnswer2()" id="tofu_soup" src="img/tofu_soup.jpeg" alt="Korean Soft Tofu Soup"  /> 
+				<div id="answer2"></div>
+			</div>	
+		</div> <!-- End of second tofu type -->
+		<br>
+		<hr>
+		
+		<div class="welcomeContent">
+			<div class="tofuContent">
+				<h2>Firm Tofu</h2>
+				<p>This is the type commonly found in supermarkets. It is effortless to chop and the most versatile to cook.</p>
+				<em>Hover over the image to view a popular way to use firm tofu!</em>
+			</div>
+			<div class="welcomeImage">
+				<div class="welcomeImage">
+					<img onmouseenter="showAnswer3()" id="firm_tofu" src="img/firm_tofu.jpeg" alt="Firm Tofu"  /> 
+					<img onmouseleave="hideAnswer3()" id="marinated_tofu" src="img/marinated_tofu.jpeg" alt="Marinated Tofu"  /> 
+				<div id="answer3"></div>
+			</div>	
+		</div>
+		</div> <!-- End of third tofu type -->
+		<br>
+		<hr>
+		
+		<div class="welcomeContent">
+			<div class="tofuContent">
+				<h2>Extra Firm Tofu</h2>
+				<p>Extra firm tofu has less water content than firm, but it does not take in marinades well.</p>
+				<em>Hover over the image to view a popular way to use extra firm tofu!</em>
+			</div>
+			<div class="welcomeImage">
+				<div class="welcomeImage">
+					<img onmouseenter="showAnswer4()" id="extrafirm_tofu" src="img/extrafirm_tofu.jpeg" alt="Extra Firm Tofu"  /> 
+					<img onmouseleave="hideAnswer4()" id="fried_tofu" src="img/fried_tofu.jpeg" alt="Deep Fried Tofu"  /> 
+				<div id="answer4"></div>
+			</div>	
+		</div>
+		</div> <!-- End of fourth tofu type -->
+		<br>
+		<hr>
+		
+	</div>
+	
+	<script>
+function showAnswer1() {
+	   $("#silken_tofu").hide();
+	   $("#tofu_pudding").show();
+	   $("#answer1").html("Tofu Pudding");
+}
+function hideAnswer1() {
+	   $("#silken_tofu").show();
+	   $("#tofu_pudding").hide();
+	   $("#answer1").html(""); 
+}
+function showAnswer2() {
+	   $("#soft_tofu").hide();
+	   $("#tofu_soup").show();
+	   $("#answer2").html("Soft Tofu Soup");
+	}
+function hideAnswer2() {
+	   $("#soft_tofu").show();
+	   $("#tofu_soup").hide();
+	   $("#answer2").html("");  
+	}
+function showAnswer3() {
+	   $("#firm_tofu").hide();
+	   $("#marinated_tofu").show();
+	   $("#answer3").html("Marinated Tofu");
+	}
+function hideAnswer3() {
+	   $("#firm_tofu").show();
+	   $("#marinated_tofu").hide();
+	   $("#answer3").html("");  
+	}
+function showAnswer4() {
+	   $("#extrafirm_tofu").hide();
+	   $("#fried_tofu").show();
+	   $("#answer4").html("Deep Fried Tofu");
+	}
+function hideAnswer4() {
+	   $("#extrafirm_tofu").show();
+	   $("#fried_tofu").hide();
+	   $("#answer4").html("");  
+	}
+</script>
+
+	<center class="references">
+	<h3>References</h3>
+	<a href="http://www.tofupedia.com/en/tofu-bereiden/soorten-tofu/">Tofupedia: Types of Tofu</a>
+	</center>
+	<br>
+
+<div id="footer">
+<br>
+<center>Website created by Jayme Nakamura, IST541
+<p>California State University, Monterey Bay</p>
+Instructional Science and Technology
+	
+<p><a href="#top">Back to top of page</a></p>
+</center>
+<br>
+</div>
+	
+	
+	
+
+	
+</body>
+</html>
